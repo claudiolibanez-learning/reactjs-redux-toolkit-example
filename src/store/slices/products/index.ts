@@ -7,7 +7,7 @@ import { RootState } from "../../types"
 
 import { Product } from './types';
 
-const STATUS = {
+export const STATUS = {
   IDLE: 'idle',
   LOADING: 'loading',
   ERROR: 'error'

@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "start:server": "json-server --watch mock/server.json"
+    "start:server": "json-server --delay 3000 --watch mock/server.json"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.4",

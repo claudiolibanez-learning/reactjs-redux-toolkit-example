@@ -2,7 +2,9 @@ import { useEffect, useState } from "react";
 
 import { useReduxDispath, useReduxSelector } from "../store/hooks"
 
-import { productsSelector, fetchProducts } from "../store/slices/products";
+import { productsSelector, fetchProducts, STATUS } from "../store/slices/products";
+
+
 
 interface Product {
   id: number,
@@ -32,6 +34,14 @@ export function Home() {
 
     dispatch(fetchProducts());
   }, []);
+
+  if (products.status === STATUS.LOADING) {
+    return <div>Carregando...</div>
+  }
+
+  if (products.status === STATUS.ERROR) {
+    return <div>Deu erro!</div>
+  }
 
   return (
     <div>
