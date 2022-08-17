@@ -4,6 +4,11 @@
       "id": 1,
       "name": "Camiseta",
       "description": "Camiseta grande"
+    },
+    {
+      "id": 2,
+      "name": "Calça",
+      "description": "Calça preta"
     }
   ]
 }
