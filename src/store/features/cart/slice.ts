@@ -1,11 +1,11 @@
 import { createSlice } from '@reduxjs/toolkit';
 import produce from 'immer';
 
-import { RootState } from '../../types';
+import { RootState } from '../../@types';
 
-import { Cart } from './types';
+import { Cart } from './@types';
 
-const initialState = [] as Cart[];
+import { initialState } from './initialState';
 
 const cartSlice = createSlice({
   name: '@cart',
